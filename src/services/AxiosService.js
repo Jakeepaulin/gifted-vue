@@ -1,6 +1,12 @@
-import Axios from 'axios'
-import { baseURL } from '../env'
+import axios from "axios";
+import Axios from "axios";
+import { baseURL } from "../env";
 export const api = Axios.create({
   baseURL,
-  timeout: 8000
-})
+  timeout: 8000,
+});
+
+export const giftsApi = axios.create({
+  baseURL: "https://bcw-sandbox.herokuapp.com",
+  timeout: 8000,
+});
